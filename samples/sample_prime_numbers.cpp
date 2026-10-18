@@ -7,9 +7,9 @@
 
 #include <iomanip>
 
-// #define USE_SET // Использовать класс TSet,
-                // закоментировать, чтобы использовать битовое поле
-
+//#define USE_SET // Использовать класс TSet,
+                 //закоментировать, чтобы использовать битовое поле
+using namespace std;
 #ifndef USE_SET // Использовать класс TBitField
 
 #include "tbitfield.h"
@@ -19,11 +19,14 @@ int main()
   int n, m, k, count;
 
   setlocale(LC_ALL, "Russian");
+  
   cout << "Тестирование программ поддержки битового поля" << endl;
   cout << "             Решето Эратосфена" << endl;
   cout << "Введите верхнюю границу целых значений - ";
   cin  >> n;
-  TBitField s(n + 1);
+  TBitField s(n+1);
+  s.ClrBit(n);
+
   // заполнение множества
   for (m = 2; m <= n; m++)
     s.SetBit(m);
@@ -35,7 +38,7 @@ int main()
         if (s.GetBit(k))
           s.ClrBit(k);
   // оставшиеся в s элементы - простые числа
-  cout << endl << "Печать множества некратных чисел" << endl << s << endl;
+  cout << "Печать множества некратных чисел" << endl << s << " ";
   cout << endl << "Печать простых чисел" << endl;
   count = 0;
   k = 1;
