@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -14,7 +14,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B28BD511-1B50-3F01-BC90-3931A50304B0}</ProjectGuid>
+    <ProjectGuid>{30F894B4-E6BA-30E0-9377-FC84A7ECC351}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -25,12 +25,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -41,13 +41,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_set.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_set</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_set.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_set</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -56,7 +56,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Новая папка\mp2-lab1-set\include;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\gtest;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\include;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\gtest;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -82,10 +82,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Новая папка\mp2-lab1-set\include;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\gtest;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\include;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\gtest;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Новая папка\mp2-lab1-set\include;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\gtest;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\include;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\gtest;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -100,9 +100,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/user/Desktop/Новая папка/mp2-lab1-set/build/lib/Debug/test_set.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build/lib/Debug/test_set.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/user/Desktop/Новая папка/mp2-lab1-set/build/bin/test_set.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build/bin/test_set.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Новая папка\mp2-lab1-set\include;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\gtest;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\include;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\gtest;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -139,10 +139,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Новая папка\mp2-lab1-set\include;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\gtest;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\include;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\gtest;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Новая папка\mp2-lab1-set\include;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\gtest;C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\include;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\gtest;C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,9 +157,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/user/Desktop/Новая папка/mp2-lab1-set/build/lib/Release/test_set.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build/lib/Release/test_set.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/user/Desktop/Новая папка/mp2-lab1-set/build/bin/test_set.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build/bin/test_set.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -168,11 +168,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/user/Desktop/Новая папка/mp2-lab1-set/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/user/Desktop/Новая папка/mp2-lab1-set" "-BC:/Users/user/Desktop/Новая папка/mp2-lab1-set/build" --check-stamp-file "C:/Users/user/Desktop/Новая папка/mp2-lab1-set/build/test/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/s25380174/Desktop/lab1/mp2-lab1-set -BC:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build --check-stamp-file C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -181,11 +181,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\test\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/user/Desktop/Новая папка/mp2-lab1-set/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/user/Desktop/Новая папка/mp2-lab1-set" "-BC:/Users/user/Desktop/Новая папка/mp2-lab1-set/build" --check-stamp-file "C:/Users/user/Desktop/Новая папка/mp2-lab1-set/build/test/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/s25380174/Desktop/lab1/mp2-lab1-set -BC:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build --check-stamp-file C:/Users/s25380174/Desktop/lab1/mp2-lab1-set/build/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -194,29 +194,29 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\test\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\test_main.cpp" />
-    <ClCompile Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\test_tbitfield.cpp" />
-    <ClCompile Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\test\test_tset.cpp" />
+    <ClCompile Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\test_main.cpp" />
+    <ClCompile Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\test_tbitfield.cpp" />
+    <ClCompile Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\test\test_tset.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\ZERO_CHECK.vcxproj">
-      <Project>{13129B24-31D4-3DAB-965F-71A518DA563A}</Project>
+    <ProjectReference Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\ZERO_CHECK.vcxproj">
+      <Project>{4D47B0BD-B8E3-3989-ABB3-D9C878C4B838}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\gtest\gtest.vcxproj">
-      <Project>{3304DFC1-2F57-3690-8AB4-2CC48FFC9637}</Project>
+    <ProjectReference Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\gtest\gtest.vcxproj">
+      <Project>{63E759E1-3C8A-332C-88CA-5989C2EFFB0F}</Project>
       <Name>gtest</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\user\Desktop\Новая папка\mp2-lab1-set\build\src\set.vcxproj">
-      <Project>{CC36601E-CA08-3FCF-8526-6739A50466BA}</Project>
+    <ProjectReference Include="C:\Users\s25380174\Desktop\lab1\mp2-lab1-set\build\src\set.vcxproj">
+      <Project>{7A987B13-A176-3AE6-BBFF-68229952A680}</Project>
       <Name>set</Name>
     </ProjectReference>
   </ItemGroup>

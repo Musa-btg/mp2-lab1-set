@@ -16,42 +16,54 @@ using namespace std;
 
 int main()
 {
-  int n, m, k, count;
+    int n, m, k, count;
 
-  setlocale(LC_ALL, "Russian");
-  
-  cout << "Тестирование программ поддержки битового поля" << endl;
-  cout << "             Решето Эратосфена" << endl;
-  cout << "Введите верхнюю границу целых значений - ";
-  cin  >> n;
-  TBitField s(n+1);
-  s.ClrBit(n);
+    setlocale(LC_ALL, "Russian");
 
-  // заполнение множества
-  for (m = 2; m <= n; m++)
-    s.SetBit(m);
-  // проверка до sqrt(n) и удаление кратных
-  for (m = 2; m * m <= n; m++)
-    // если m в s, удаление кратных
-    if (s.GetBit(m))
-      for (k = 2 * m; k <= n; k += m)
-        if (s.GetBit(k))
-          s.ClrBit(k);
-  // оставшиеся в s элементы - простые числа
-  cout << "Печать множества некратных чисел" << endl << s << " ";
-  cout << endl << "Печать простых чисел" << endl;
-  count = 0;
-  k = 1;
-  for (m = 2; m <= n; m++)
-    if (s.GetBit(m))
-    {
-      count++;
-      cout << setw(3) << m << " ";
-      if (k++ % 10 == 0)
-        cout << endl;
-    }
-  cout << endl;
-  cout << "В первых " << n << " числах " << count << " простых" << endl;
+    cout << "Тестирование программ поддержки битового поля" << endl;
+    cout << "             Решето Эратосфена" << endl;
+    cout << "Введите верхнюю границу целых значений - ";
+    cin >> n;
+    TBitField s(n + 1);
+    s.ClrBit(n);
+
+    // заполнение множества
+    for (m = 2; m <= n; m++)
+        s.SetBit(m);
+    // проверка до sqrt(n) и удаление кратных
+    for (m = 2; m * m <= n; m++)
+        // если m в s, удаление кратных
+        if (s.GetBit(m))
+            for (k = 2 * m; k <= n; k += m)
+                if (s.GetBit(k))
+                    s.ClrBit(k);
+    // оставшиеся в s элементы - простые числа
+    cout << "Печать множества некратных чисел" << endl << s << " ";
+    cout << endl << "Печать простых чисел" << endl;
+    count = 0;
+    k = 1;
+    for (m = 2; m <= n; m++)
+        if (s.GetBit(m)==1)
+        {
+            count++;
+            cout << setw(3) << m << " ";
+            if (k++ % 10 == 0)
+                cout << endl;
+        }
+    cout << endl;
+    cout << "В первых " << n << " числах " << count << " простых" << endl;
+    count = 0;
+    k = 1;
+    for (m = 2; m  <= n; m++)
+        if (s.GetBit(m)==0 && m %2 != 0) {
+            count++;
+            cout << setw(3) << m << " ";
+            if (k++ % 10 == 0)
+                cout << endl;
+        }
+    cout << endl;
+    cout <<count << "неч. составных";
+    //        
 }
 #else
 
